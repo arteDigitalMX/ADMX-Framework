@@ -1,18 +1,18 @@
 //asignar un nombre y versión al cache
 const CACHE_NAME = 'v1_cache',
   urlsToCache = [
-    '../',
+    './',
     'https://fonts.googleapis.com/css?family=Audiowide|Roboto&display=swap',
     'https://kit.fontawesome.com/0838120559.js',
-    '../css/estilos.css',
+    './css/estilos.css',
     './scripts.js',
     './script.js',
     './jquery.js',
     './lightcase_min.js',
     './scrollreveal_min.js',
-    '../img/logo.png',
-    '../img/bg.png',
-    '../favicon.png'
+    './img/logo.png',
+    './img/bg.png',
+    './favicon.png'
   ]
 
 //durante la fase de instalación, generalmente se almacena en caché los activos estáticos
