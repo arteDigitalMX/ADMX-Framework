@@ -11,6 +11,7 @@ const CACHE_NAME = 'v1_cache',
     './js/jquery.js',
     './js/lightcase_min.js',
     './js/scrollreveal_min.js',
+    './fonts/lightcase.ttf',
     './img/logo.png',
     './img/bg.jpg',
     './favicon.png'
