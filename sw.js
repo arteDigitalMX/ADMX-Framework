@@ -1,3 +1,4 @@
+;
 //asignar un nombre y versión al cache
 const CACHE_NAME = 'v1_cache',
   urlsToCache = [
@@ -5,13 +6,13 @@ const CACHE_NAME = 'v1_cache',
     'https://fonts.googleapis.com/css?family=Audiowide|Roboto&display=swap',
     'https://kit.fontawesome.com/0838120559.js',
     './css/estilos.css',
-    './scripts.js',
-    './script.js',
-    './jquery.js',
-    './lightcase_min.js',
-    './scrollreveal_min.js',
+    './js/scripts.js',
+    './js/script.js',
+    './js/jquery.js',
+    './js/lightcase_min.js',
+    './js/scrollreveal_min.js',
     './img/logo.png',
-    './img/bg.png',
+    './img/bg.jpg',
     './favicon.png'
   ]
 
