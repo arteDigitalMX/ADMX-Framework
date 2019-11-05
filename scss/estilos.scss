@@ -1,0 +1,45 @@
+// Variables personalizadas
+	// Colores
+		$colorPrincipal: #E53935;
+		$colorSecundario: #2196F3;
+
+		$fondoPagina: #F5F5F5;
+
+		$colorTexto: #323232;
+
+		$colorEnlace: lighten($colorPrincipal,10);
+		$colorEnlaceHover: lighten($colorSecundario,10);
+
+		$colorEncabezado: $colorPrincipal;
+
+// Importamos componentes
+	//Fuentes
+		@import url('https://fonts.googleapis.com/css?family=Audiowide|Roboto&display=swap');
+
+		$Texto: 'Roboto', sans-serif;
+		$Titulo: 'Audiowide', cursive;
+
+	// Bases y variables iniciales
+		@import "librerias/normalize";  // Normalize | Libreria para normalizar estilos en todos los navegadores
+		@import "base/base"; // Estilos base | Se aplican antes del Framework
+		@import "base/mixins"; // Mixins personalizados
+		@import "base/grid"; // Importamos el Grid
+
+	// Frameworks y otras librerias
+		// Importamos la libreria | Lightcase
+		@import "librerias/Lightcase/lightcase";
+
+	// Tema | Estilos personalizados para este proyecto
+		@import "tema/main";
+		@import "tema/header";
+		@import "tema/footer";
+		@import "tema/imagenes";
+		@import "tema/menus";
+		@import "tema/formularios";
+		@import "tema/botones";
+
+	// Estilos finales
+		@import "tema/final";
+
+	// Modulos perzonalizados
+		@import "modulos/modulos"; // Estilos para nuestros modulos

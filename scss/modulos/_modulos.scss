@@ -1,0 +1,10 @@
+/// Acordeón
+.acordeon {
+	&_titulo {
+		cursor: pointer;
+		width: 100%;
+	}
+	&_contenido {
+		display: none;
+	}
+}

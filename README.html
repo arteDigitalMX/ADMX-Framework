@@ -1,0 +1,105 @@
+<html>
+      <head>
+        <meta charset="UTF-8">
+        <title>README.md</title>
+      </head>
+      <body>
+        <p>#arteDigitalMX | Framework  --<a href="https://artedigitalmx.github.io/admxFramework/">online version</a></p>
+<p>#arteDigitalMX | Framework  --<a href="https://gitlab.com/arteDigitalMX/admx-framework">online version</a></p>
+<p><img src="https://raw.githubusercontent.com/arteDigitalMX/admxFramework/master/img/logo.png" alt="arteDigitalMX"></p>
+<p>Este framework es un conjunto de estilos, <em>scripts</em>, tipografías, <em>icon-fonts</em>, entre otras librerías de libre distribución. Desarrollado por <a href="http://arteDigitalMX.xyz">arteDigitalMX</a> este entorno de trabajo es implementado para la maquetación, diseño y desarrollo de sitios web.</p>
+<p>Puede utilizarse para el desarrollo desde cero o bien, para la creación de plantillas HTML5 completamente responsive para sistemas de gestión de contenido como WordPress, Drupal, Joomla, entre otros.</p>
+<p>Agradecemos a las librerías utilizadas: <a href="https://necolas.github.io/normalize.css/">Normalize</a>, <a href="https://fortawesome.github.io/Font-Awesome/">FontAwesome</a>, <a href="https://scrollrevealjs.org/">ScrollReveals</a>, <a href="http://cornel.bopp-art.com/lightcase/">Lightcase</a> y <a href="https://jquery.com/">jQuery v2.1.4</a>.</p>
+<p>A continuación mostramos la forma en que se visualizan y se utilizan algunos elementos.</p>
+<hr>
+<p>##Grid | Sistema de rejilla</p>
+<p>El Grid es un sistema de filas y columnas que se utiliza para poder tener un mejor control de los contenedores “DIV”, tanto en su posición como en su tamaño. Como en casi todos los grids, utilizamos un contenedor para cada fila y este a su vez contendrá los ítems para generar las columnas que necesitemos.</p>
+<p>El contenedor principal es un DIV con la clase “container” el cual tiene un ancho máximo definido de 1200px, aunque este valor puede modificarse también puede añadirse la clase “full” para crear un contenedor que tenga el ancho total del viewport.</p>
+<p>Dentro de los contenedores están otros DIV con la clase “ítem”, estos serán los necesarios para crear las columnas que necesitemos y para definir su tamaño debemos añadir 2 parámetros más en una clase; el primero es el breakpoint (base, movil, tablet, web, hd) seguido del tamaño en fracción o en porcentaje.</p>
+<p>Si definimos el tamaño en porcentaje debemos colocar la clase &quot;breackpoint-%&quot;&quot; es decir, para indicar un 50% desde el breakpoin movil seria la clase “movil-50” y en caso de utilizar fracciones como ejemplo de un tercio en sería la clase &quot;tablet-1-3&quot;.</p>
+<p>Las fracciones pueden ser creadas, editadas y eliminadas.</p>
+<hr>
+<p>##Estilos base</p>
+<p>Se utilizan estilos base para normalizar y dar un toque muy básico pero profesional de diseño a los encabezados y textos.</p>
+<ul>
+<li><code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, <code>&lt;h3&gt;</code>, <code>&lt;h4&gt;</code>, <code>&lt;h5&gt;</code>, <code>&lt;h6&gt;</code></li>
+<li><code>&lt;p&gt;</code></li>
+<li><code>&lt;blockquote&gt;</code></li>
+<li><code>&lt;mark&gt;</code></li>
+<li><code>&lt;del&gt;</code></li>
+<li><code>&lt;s&gt;</code></li>
+<li><code>&lt;ins&gt;</code></li>
+<li><code>&lt;u&gt;</code></li>
+<li><code>&lt;small&gt;</code></li>
+<li><code>&lt;big&gt;</code></li>
+<li><code>&lt;stong&gt;</code></li>
+<li><code>&lt;em&gt;</code></li>
+<li><code>&lt;abbr&gt;</code></li>
+<li><code>&lt;ul&gt;</code></li>
+<li><code>&lt;ol&gt;</code></li>
+<li><code>&lt;li&gt;</code></li>
+</ul>
+<hr>
+<p>También se normalizan estilos base para códigos, separadores horizontales y tablas.</p>
+<ul>
+<li><code>&lt;code&gt;</code></li>
+<li><code>&lt;pre&gt;</code></li>
+<li><code>&lt;var&gt;</code></li>
+<li><code>&lt;samp&gt;</code></li>
+<li><code>&lt;hr&gt;</code></li>
+<li><code>&lt;table&gt;</code></li>
+</ul>
+<p>Estos estilos pueden sustituirse o eliminarse del archivo _base.scss dentro de la carpeta base de scss.</p>
+<hr>
+<p>##Modulos y librerías</p>
+<p>###Acordeón
+Éste es un simple script que permite mostrar contenido con efecto de acordeón. Podemos usar sólo uno o múltiples acordeones, utilizando el siguiente código.</p>
+<pre><code>.acordeonContenedor.container
+    .acordeon.item.tablet-1-3
+        a(title=&quot;abrir/cerrar&quot;).acordeon_titulo Acordeon1
+        .acordeon_contenido
+            ul
+                li Elemento 1
+                li Elemento 2
+                li Elemento 3
+</code></pre><hr>
+<p>###Íconos de Font Awesome
+La colección completa de font-icons esta en el sitio oficial de Font Awesome.
+Para su implemetación debe darse la clase &quot;fa&quot; seguida de una segunda clase &quot;fa-ICONO&quot; donde &quot;ICONO&quot; es sustituido por el icon-font deseado, ejemplo del icono de Twitter:</p>
+<p><code>&lt;i class=&quot;fab fa-twitter&quot;&gt;</code></p>
+<hr>
+<p>###ScrollReveal
+Añadiendo una clase a cualquier elemento, se consigue el efecto de Revelación según la posición del scroll.</p>
+<ul>
+<li><code>.sR_fade</code></li>
+<li><code>.sR_scale</code></li>
+<li><code>.sR_Izquierda</code></li>
+<li><code>.sR_Derecha</code></li>
+<li><code>.sR_Arriba</code></li>
+<li><code>.sR_Abajo</code></li>
+<li><code>.sR_giroIzquierda</code></li>
+<li><code>.sR_giroDerecha</code></li>
+<li><code>.sR_giroIzquierda2</code></li>
+<li><code>.sR_giroDerecha2</code></li>
+<li><code>.sR_giroArriba</code></li>
+<li><code>.sR_giroAbajo</code></li>
+</ul>
+<hr>
+<p>###Lightcase
+Librería para mostrar imágenes, galerías y ventanas modales.</p>
+<p>Ejemplode imágenes modales:
+<code>a(href=&quot;http://lorempixel.com/800/400&quot;, data-rel=&quot;lightcase:myCollection:slideshow&quot;, title=&quot;Titulo 1&quot;) Texto o imágen de enlace</code></p>
+<p>Ejemplo de ventana modal:</p>
+<ul>
+<li>Trigger o enlace
+<code>a(href=&quot;#Modal1&quot;, data-rel=&quot;lightcase&quot;) Texto o miniatura</code></li>
+<li>Venta con contenido
+<code>div#Modal1(style=&quot;display: none;&quot;) Contenido</code></li>
+</ul>
+<hr>
+<hr>
+<hr>
+<p><strong>Se recomienda eliminar las librerías o funciones que no se utilicen, para mejorar el rendimiento.</strong></p>
+
+      </body>
+    </html>

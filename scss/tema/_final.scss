@@ -1,0 +1,29 @@
+// Estilos de ejemplo
+// Eliminar estilos para ahorrar espacio
+
+.Estilos {
+	background: $colorSecundario;
+	padding: 1rem 0;
+	p {
+		color: #FFF;
+		margin: 0;
+	}
+	.container {
+		background: $colorPrincipal;
+	}
+	.item {
+		background: #FFF;
+		border: 1px solid $colorPrincipal;
+		p {
+			color: #666;
+			margin: 0;
+		}
+	}
+	.full {
+		background: darken($colorPrincipal, 10);
+	}
+}
+
+.azul {
+	color: $colorSecundario;
+}
