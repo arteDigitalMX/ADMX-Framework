@@ -9,7 +9,7 @@ body {
 	margin: 0;
 	font-family: $Texto;
 	background: $fondoPagina;
-	overflow-x: hidden;
+	overflow-x: hidden !important;
 }
 
 a {
@@ -128,6 +128,7 @@ pre, code {
 	background: #212121;
 	color: #FAFAFA;
 	font-family: monospace;
+	overflow: scroll;
 	padding: .5rem;
 	word-wrap: break-word;
 }
