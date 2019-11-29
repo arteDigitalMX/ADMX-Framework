@@ -2,8 +2,51 @@ doctype html
 html(lang="es-MX")
 
 	//- Head
-	include componentes/head
+	head
+		meta(charset="utf-8")
+		meta(name="viewport", content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0")
+		link(href="favicon.png", rel="shortcut icon", type="./favicon.png")
+		link(rel="author", type="text/plain", href="./humans.txt")
+		link(rel="sitemap", type="application/xml", title="Sitemap", href="./sitemap.xml")
+		meta(name="robots" content="index,follow")
 
+		title arteDigitalMX | Framework
+		meta(name="description" content="arteDigitalMX | Framework para desarrollo web")
+		link(rel="canonical" href="./")
+
+		meta(property="og:locale" content="es_MX" )
+		meta(property="og:type" content="website" )
+		meta(property="og:title" content="arteDigitalMX | Framework" )
+		meta(property="og:description" content="arteDigitalMX | Framework para desarrollo web" )
+		meta(property="og:url" content="https://arte-digital.mx" )
+		meta(property="og:site_name" content="arteDigitalMX" )
+		meta(property="og:image" content="./img/logo.png" )
+		meta(property="og:image:secure_url" content="./img/logo.png" )
+		meta(property="og:image:width" content="1200" )
+		meta(property="og:image:height" content="675" )
+		meta(name="twitter:card" content="summary_large_image")
+		meta(name="twitter:description" content="arteDigitalMX | Framework para desarrollo web")
+		meta(name="twitter:title" content="arteDigitalMX | Framework")
+		meta(name="twitter:site" content="@arteDigitalMX")
+		meta(name="twitter:image" content="./img/logo.png")
+		meta(name="twitter:creator" content="@deuDrac")
+
+		//- Json+Ld
+		
+
+		meta(name="theme-color" content="#E53935")
+		meta(name="MobileOptimized" content="width")
+		meta(name="HandheldFriendly" content="true")
+		meta(name="apple-mobile-web-app-capable" content="yes")
+		meta(name="apple-mobile-web-app-status-bar-style" content="black-translucent")
+		link(rel="shortcut icon" type="image/png" href="./img/logo.png")
+		link(rel="apple-touch-icon" href="./favicon.png")
+		link(rel="apple-touch-startup-image" href="./img/logo.png")
+		link(rel="manifest" href="/manifest.json")
+
+	//- End-Head
+
+	//- Body
 	body
 
 		//- Header
@@ -22,11 +65,13 @@ html(lang="es-MX")
 		
 		link(rel="stylesheet", href="css/estilos.css")
 		//- jQuery y scripts principales
-		script(src="js/jquery.js")
+		script(src="js/script.js")
 		//- Librerias JS
-		script(src="js/scrollreveal_min.js")
-		script(src="js/lightcase_min.js")
+		script(src="js/scrollspy.js")
+		script(src="js/smooth-scroll.js")
+		script(src="js/nst.min.js")
+		script(src="js/slider.js")
+		script(src="js/lightbox.js")
 		script(src="https://kit.fontawesome.com/0838120559.js" crossorigin="anonymous")
 		//- Scripts personales
 		script(src="js/scripts_min.js")
-		script(src="js/script.js")

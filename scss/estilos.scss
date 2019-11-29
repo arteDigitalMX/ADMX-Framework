@@ -27,7 +27,7 @@
 
 	// Frameworks y otras librerias
 		// Importamos la libreria | Lightcase
-		@import "librerias/Lightcase/lightcase";
+		@import "librerias/nst";
 
 	// Tema | Estilos personalizados para este proyecto
 		@import "tema/main";
@@ -37,6 +37,7 @@
 		@import "tema/menus";
 		@import "tema/formularios";
 		@import "tema/botones";
+		@import "tema/slider";
 
 	// Estilos finales
 		@import "tema/final";

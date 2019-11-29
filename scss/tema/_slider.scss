@@ -1,0 +1,24 @@
+
+.flickity-page-dots {
+	bottom: 0 !important;
+}
+
+.carousel {
+  background: #EEE;
+}
+
+.carousel-cell {
+  width: 33%;
+  height: auto;
+  margin-right: 10px;
+  background: $colorSecundario;
+  border-radius: 5px;
+  padding: 16px;
+}
+
+.slider {
+  width: 100%;
+  height: 600px;
+  padding: 64px;
+  margin: 0;
+}
