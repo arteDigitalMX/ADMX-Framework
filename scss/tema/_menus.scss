@@ -101,14 +101,31 @@ nav {
 			list-style: none;
 			margin: 0;
 			padding: 8px 0;
+			position: relative;
 			transition: all .5s;
+			&.submenu ul li {
+				padding: 8px;
+			}
+			&.submenu:before {
+				border-left: 10px solid #fff;
+				border-top: 7px solid transparent;
+				border-bottom: 7px solid transparent;
+				transform: rotate(90deg);
+				content: "";
+				height: 0;
+				position: absolute;
+				right: 20px;
+				top: 14px;
+				width: 0;
+				z-index: 99999999999999;
+			}
 			&:hover {
 				background: $hoverUno;
 				ul {
-					display: none;
+					display: block;
 				}
-				ul ul {
-					display: none;
+				ul li {
+					display: block;
 				}
 			}
 			a {
@@ -186,6 +203,16 @@ nav {
 				padding: .3em 16px;
 				position: relative;
 				transition: all .5s;
+				&.submenu {
+					padding-right: 32px;
+				}
+				&.submenu ul li {
+					padding: 12px;
+				}
+				&.submenu:before {
+					right: 10px;
+					top: 16px;
+				}
 				&:hover {
 					ul {
 						display: block;

@@ -1,24 +1,75 @@
 
 .flickity-page-dots {
-	bottom: 0 !important;
+  bottom: 0 !important;
+  .dot {
+    background: $colorPrincipal !important;
+  }
 }
 
 .carousel {
-  background: #EEE;
+  height: auto;
 }
 
 .carousel-cell {
-  width: 33%;
+  background: #e5e5e5;
+  border-radius: 5px;
   height: auto;
   margin-right: 10px;
-  background: $colorSecundario;
-  border-radius: 5px;
-  padding: 16px;
+  padding: 8px;
+  width: 40%;
+  h3 {
+    font-size: 18px;
+    text-transform: uppercase;
+  }
 }
 
 .slider {
-  width: 100%;
-  height: 600px;
-  padding: 64px;
+  background-image: url('/img/Slider.webp');
+  background-size: cover;
+  background-position: center left;
+  border-radius: 0px;
+  height: auto;
   margin: 0;
+  min-height: 250px;
+  position: relative;
+  width: 100%;
+  &::after {
+    background: rgba($color: #000, $alpha: 0.3);
+    content: "";
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+
+  }
+  .sliderContent {
+    position: relative;
+    width: 80%;
+    z-index: 2;
+    h2 {
+      font-size: 24px;
+      text-transform: uppercase;
+    }
+    p {
+      color: #fff;
+      text-align: center;
+      text-shadow: 1px 1px 3px #000;
+    }
+  }
+}
+
+
+@media screen and (min-width: 768px){
+  .slider {
+    background-position: center center;
+    min-height: 400px;
+  }
+}
+@media screen and (min-width: 1024px){
+  .slider {
+    background-position: center center;
+    min-height: 600px;
+  }
 }

@@ -1,4 +1,4 @@
-main(role="main", id="top")
+main#top(role="main")
 	.container
 		.item
 			h2.abcenter arteDigitalMX | Framework
@@ -23,7 +23,7 @@ nav#stickyElement
 					span.menu-item
 			#multi-menu.nst-content.nst-is-collapsed.to-web
 				ul.mMenu
-					li: a(href="#top") Presentación
+					li: a(href="#Presentacion") Presentación
 					li: a(href="#Grid") Grid
 					li: a(href="#Textos") Textos
 					li: a(href="#Codigos") Códigos
@@ -31,9 +31,11 @@ nav#stickyElement
 					li: a(href="#iconFont") iconFont
 					li: a(href="#Slider") Slider
 					li: a(href="#lightbox") Lightbox
+					li.submenu: a(href="") Submenu
+						ul: li: a(href="") Submenu Item
 			#multi-menu2.from-web
 				ul.mMenu
-					li: a(href="#top") Presentación
+					li: a(href="#Presentacion") Presentación
 					li: a(href="#Grid") Grid
 					li: a(href="#Textos") Textos
 					li: a(href="#Codigos") Códigos
@@ -41,6 +43,8 @@ nav#stickyElement
 					li: a(href="#iconFont") iconFont
 					li: a(href="#Slider") Slider
 					li: a(href="#lightbox") Lightbox
+					li.submenu: a Submenu
+						ul: li: a Submenu Item
 
 section#Grid
 	.container
@@ -242,6 +246,7 @@ section
 				button(class="nst-toggle") Botón
 				.nst-content(style="background-color:#fff; padding:16px;")
 					h4 Contenido visible por default
+
 		.item.tablet-50
 			pre 
 				| .nst-component.nst-is-collapsed
@@ -311,27 +316,27 @@ section
 		.item
 			.carousel(data-flickity='{ "autoPlay": true, "wrapAround": true }')
 				.carousel-cell.abcenter
-					h1 Carrusel 1
-					p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam numquam mollitia ipsam tempore, exercitationem, saepe rerum nobis deserunt reprehenderit illum aspernatur deleniti culpa, dolorem magni. Voluptatibus labore aliquid assumenda dolorum!
+					h3 Carrusel 1
+					p Lorem ipsum dolor, sit amet consectetur adipisicing elit.
 					img(src="img/bg.webp", alt="Background arteDigitalMX")
 				.carousel-cell.abcenter
-					h1 Carrusel 2
-					p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam numquam mollitia ipsam tempore, exercitationem, saepe rerum nobis deserunt reprehenderit illum aspernatur deleniti culpa, dolorem magni. Voluptatibus labore aliquid assumenda dolorum!
+					h3 Carrusel 2
+					p Lorem ipsum dolor, sit amet consectetur adipisicing elit.
 					img(src="img/bg.webp", alt="Background arteDigitalMX")
 				.carousel-cell.abcenter
-					h1 Carrusel 3
-					p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam numquam mollitia ipsam tempore, exercitationem, saepe rerum nobis deserunt reprehenderit illum aspernatur deleniti culpa, dolorem magni. Voluptatibus labore aliquid assumenda dolorum!
+					h3 Carrusel 3
+					p Lorem ipsum dolor, sit amet consectetur adipisicing elit.
 					img(src="img/bg.webp", alt="Background arteDigitalMX")
 	.container-full
 		.carousel(data-flickity='{ "autoPlay": true, "wrapAround": true }')
 			.carousel-cell.slider.abcenter
-				.item.base-50
-					h1 Slider 1
-					p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam numquam mollitia ipsam tempore, exercitationem, saepe rerum nobis deserunt reprehenderit illum aspernatur deleniti culpa, dolorem magni. Voluptatibus labore aliquid assumenda dolorum!
+				.sliderContent
+					h2 Slider 1
+					p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam numquam mollitia ipsam tempore, exercitationem, saepe rerum nobis deserunt.
 			.carousel-cell.slider.abcenter
-				.item.base-50
-					h1 Slider 2
-					p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam numquam mollitia ipsam tempore, exercitationem, saepe rerum nobis deserunt reprehenderit illum aspernatur deleniti culpa, dolorem magni. Voluptatibus labore aliquid assumenda dolorum!
+				.sliderContent
+					h2 Slider 2
+					p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam numquam mollitia ipsam tempore, exercitationem, saepe rerum nobis deserunt.
 
 
 
