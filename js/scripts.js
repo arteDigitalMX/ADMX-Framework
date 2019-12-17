@@ -1,3 +1,6 @@
+//INICIA ONLOAD
+document.addEventListener("DOMContentLoaded", function() {
+
 //Sticky Menú
 var stickyElement = document.getElementById("stickyElement");
 var stuck = false;
@@ -55,4 +58,9 @@ var spy = new Gumshoe('.mMenu a', {
 var scroll = new SmoothScroll('a[href*="#"]', {
 	speed: 500,
 	speedAsDuration: true
+});
+
+
+
+//-END ONLOAD
 });
