@@ -11,8 +11,8 @@
 /* THANKS */
 
 /* SITE */
-	Last update: 	03/NOV/2019
+	Last update: 	16/DIC/2019
 	Language:		Español MX
-	Standars:		HTML5, CSS3, Javascript
-	Components:		Normalize, jQuery, Font-Awesome, Lightcase, Scrollreveal
+	Standars:		HTML5, CSS3, Vanilla Javascript
+	Components:		Normalize, FontAwesome
 	Software:		Visual Studio Code, Prepros
