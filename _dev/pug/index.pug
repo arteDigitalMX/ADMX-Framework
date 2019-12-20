@@ -5,9 +5,9 @@ html(lang="es-MX")
 	head
 		meta(charset="utf-8")
 		meta(name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0")
-		link(rel="shortcut icon" type="image/png" href="/favicon.png")
-		link(rel="author" type="text/plain" href="/humans.txt")
-		link(rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml")
+		link(rel="shortcut icon" type="image/png" href="./favicon.png")
+		link(rel="author" type="text/plain" href="./humans.txt")
+		link(rel="sitemap" type="application/xml" title="Sitemap" href="./sitemap.xml")
 		meta(name="googlebot-news" content="noindex,nofollow")
 		meta(name="googlebot" content="noindex,nofollow")
 		meta(name="robots" content="noindex,nofollow")
@@ -15,7 +15,7 @@ html(lang="es-MX")
 
 		title arteDigitalMX | Framework
 		meta(name="description" content="arteDigitalMX | Framework para desarrollo web")
-		link(rel="canonical" href="/")
+		link(rel="canonical" href="./")
 
 		meta(property="og:locale" content="es_MX" )
 		meta(property="og:type" content="website" )
@@ -23,15 +23,15 @@ html(lang="es-MX")
 		meta(property="og:description" content="arteDigitalMX | Framework para desarrollo web" )
 		meta(property="og:url" content="https://arte-digital.mx" )
 		meta(property="og:site_name" content="arteDigitalMX" )
-		meta(property="og:image" content="/src/img/logo.png" )
-		meta(property="og:image:secure_url" content="/src/img/logo.png" )
+		meta(property="og:image" content="./src/img/logo.png" )
+		meta(property="og:image:secure_url" content="./src/img/logo.png" )
 		meta(property="og:image:width" content="1200" )
 		meta(property="og:image:height" content="675" )
 		meta(name="twitter:card" content="summary_large_image")
 		meta(name="twitter:description" content="arteDigitalMX | Framework para desarrollo web")
 		meta(name="twitter:title" content="arteDigitalMX | Framework")
 		meta(name="twitter:site" content="@arteDigitalMX")
-		meta(name="twitter:image" content="/src/img/logo.png")
+		meta(name="twitter:image" content="./src/img/logo.png")
 		meta(name="twitter:creator" content="@arteDigitalMX")
 
 		//- Json+Ld
@@ -42,12 +42,12 @@ html(lang="es-MX")
 		meta(name="HandheldFriendly" content="true")
 		meta(name="apple-mobile-web-app-capable" content="yes")
 		meta(name="apple-mobile-web-app-status-bar-style" content="black-translucent")
-		link(rel="shortcut icon" type="image/png" href="/src/img/logo.png")
-		link(rel="apple-touch-icon" href="/favicon.png")
-		link(rel="apple-touch-startup-image" href="/src/img/logo.png")
-		link(rel="manifest" href="/manifest.json")
+		link(rel="shortcut icon" type="image/png" href="./src/img/logo.png")
+		link(rel="apple-touch-icon" href="./favicon.png")
+		link(rel="apple-touch-startup-image" href="./src/img/logo.png")
+		link(rel="manifest" href="./manifest.json")
 
-		link(rel="stylesheet", href="/src/css/estilos.css")
+		link(rel="stylesheet", href="./src/css/estilos.css")
 
 	//- End-Head
 
@@ -60,10 +60,23 @@ html(lang="es-MX")
 		//- Nav
 		include componentes/nav
 
-		//- Estilos
+		//- Contenido
 		include componentes/ejemplo
 
 		//- Footer
-		include componentes/footer
+		footer
 
 
+
+
+		//- Scripts principales
+		script(src="./src/js/script.js")
+		//- Librerias JS
+		script(src="./src/js/scrollspy.js")
+		script(src="./src/js/smooth-scroll.js")
+		script(src="./src/js/nst.min.js")
+		script(src="./src/js/slider.js")
+		script(src="./src/js/lightbox.js")
+		script(src="https://kit.fontawesome.com/0838120559.js" crossorigin="anonymous")
+		//- Scripts personales
+		script(src="./src/js/scripts_min.js")
