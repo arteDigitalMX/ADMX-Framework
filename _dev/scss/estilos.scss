@@ -26,8 +26,9 @@
 		@import "base/grid"; // Importamos el Grid
 
 	// Frameworks y otras librerias
-		// Importamos la libreria | Lightcase
 		@import "librerias/nst";
+		@import "librerias/glightbox";
+		@import "librerias/glide";
 
 	// Tema | Estilos personalizados para este proyecto
 		@import "tema/main";

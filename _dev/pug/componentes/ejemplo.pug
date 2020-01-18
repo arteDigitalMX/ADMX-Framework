@@ -23,26 +23,26 @@ nav#stickyElement
 					span.menu-item
 			#multi-menu.nst-content.nst-is-collapsed.to-web
 				ul.mMenu
-					li: a(href="#Presentacion") Presentación
+					li: a(href="#top") Presentación
 					li: a(href="#Grid") Grid
 					li: a(href="#Textos") Textos
 					li: a(href="#Codigos") Códigos
 					li: a(href="#Acordeon") Acordeón
 					li: a(href="#iconFont") iconFont
 					li: a(href="#Slider") Slider
-					li: a(href="#lightbox") Lightbox
+					li: a(href="#Glightbox") Lightbox
 					li.submenu: a(href="") Submenu
 						ul: li: a(href="") Submenu Item
 			#multi-menu2.from-web
 				ul.mMenu
-					li: a(href="#Presentacion") Presentación
+					li: a(href="#top") Presentación
 					li: a(href="#Grid") Grid
 					li: a(href="#Textos") Textos
 					li: a(href="#Codigos") Códigos
 					li: a(href="#Acordeon") Acordeón
 					li: a(href="#iconFont") iconFont
 					li: a(href="#Slider") Slider
-					li: a(href="#lightbox") Lightbox
+					li: a(href="#Glightbox") Lightbox
 					li.submenu: a Submenu
 						ul: li: a Submenu Item
 
@@ -340,35 +340,98 @@ section
 
 
 
-section#lightbox
+section#Glightbox
 	.container
 		.item
 			hr
 section
 	.container
 		.item
-			h3.azul Lightbox
+			h3.azul G-Lightbox
 	.container
 		.item
 			p Ejemplo imagenes modales
 		.item.tablet-1-3
-			pre a(data-fslightbox="gallery2" href="img/bg.jpg") <br> img(src="img/bg.jpg")
-		.item.tablet-1-3
-			pre a(data-video-poster="https://fslightbox.com/img/bbunny.png" data-fslightbox="html5-demo-videos" href="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4") <br> img(class="img" src="https://fslightbox.com/img/bbunny.png" alt="Big Black Bunny Fullscreen Lightbox")
-		.item.tablet-1-3
-			pre a(data-fslightbox="html5-youtube-videos" href="https://www.youtube.com/watch?v=xshEZzpS4CQ") <br> img(class="img" src="https://fslightbox.com/img/force.jpg" alt="Force - Fullscreen Lightbox")
-		.item.tablet-1-3
-			a(data-fslightbox="gallery2" href="/src/img/bg.jpg")
+			h4 Imagen
+			pre a(class="glightbox" href="/src/img/bg.jpg") <br> img(src="/src/img/bgFullHD_min.webp" alt="admx")
+			a(class="glightbox" href="/src/img/bg.jpg")
 				img(src="/src/img/bgFullHD_min.webp" alt="admx")
 		.item.tablet-1-3
-			a(data-video-poster="/src/img/bgFullHD.webp" data-fslightbox="html5-demo-videos" href="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4")
+			h4 Video
+			pre a(class="glightbox" data-video-poster="/src/img/bgFullHD.webp" href="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4") <br> img(class="img" src="/src/img/bgFullHD_min.webp" alt="Big Black Bunny Fullscreen Lightbox")
+			a(class="glightbox" data-video-poster="/src/img/bgFullHD.webp" href="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4")
 				img(class="img" src="/src/img/bgFullHD_min.webp" alt="Big Black Bunny Fullscreen Lightbox")
 		.item.tablet-1-3
-			a(data-fslightbox="html5-youtube-videos" href="https://www.youtube.com/watch?v=xshEZzpS4CQ")
+			h4 Descripción Simple
+			pre a(class="glightbox" href="/src/img/bg.jpg" data-glightbox="title: My title; description: this is the slide desciption") <br> img(src="/src/img/bgFullHD_min.webp" alt="admx")
+			a(class="glightbox" href="/src/img/bg.jpg" data-glightbox="title: My title; description: this is the slide desciption")
+				img(src="/src/img/bgFullHD_min.webp" alt="admx")
+		.item.tablet-1-3
+			h4 Descripción Avanzada
+			pre a(class="glightbox" href="/src/img/bg.jpg" data-glightbox="title: My title; description: .custom-desc1") <br> img(src="/src/img/bgFullHD_min.webp" alt="admx")<br><br>.glightbox-desc.custom-desc1 <br> p The content of this div will be used as the slide description <br> p You can add links and any HTML you want
+			a(class="glightbox" href="/src/img/bg.jpg" data-glightbox="title: My title; description: .custom-desc1")
+				img(src="/src/img/bgFullHD_min.webp" alt="admx")
+			.glightbox-desc.custom-desc1
+				p The content of this div will be used as the slide description
+				p You can add links and any HTML you want
+		.item.tablet-1-3
+			h4 Galería
+			pre a(class="glightbox" data-gallery="gallery1" href="https://www.youtube.com/watch?v=xshEZzpS4CQ") <br> img(class="img" src="/src/img/bgFullHD_min.webp" alt="Force - Fullscreen Lightbox") <br><br>a(class="glightbox" data-gallery="gallery1" href="/src/img/bg.jpg") <br> img(src="/src/img/bgFullHD_min.webp" alt="admx")
+			a(class="glightbox" data-gallery="gallery1" href="https://www.youtube.com/watch?v=xshEZzpS4CQ")
 				img(class="img" src="/src/img/bgFullHD_min.webp" alt="Force - Fullscreen Lightbox")
+			a(class="glightbox" data-gallery="gallery1" href="/src/img/bg.jpg")
+				img(src="/src/img/bgFullHD_min.webp" alt="admx")
 
+
+section#Glide
 	.container
 		.item
+			hr
+section
+	.container
+		.item
+			h3.azul Glide Carousel
+	.container
+		.item
+			.glide
+				.glide__track(data-glide-el="track")
+					.glide__slides
+						.glide__slide
+							a(class="glightbox" data-gallery="galleryProduct" href="/src/img/bgFullHD_min.webp")
+								img(src="/src/img/bgFullHD_min.webp" alt="admx")
+						.glide__slide
+							a(class="glightbox" data-gallery="galleryProduct" href="/src/img/bgFullHD_min.webp")
+								img(src="/src/img/bgFullHD_min.webp" alt="admx")
+						.glide__slide
+							a(class="glightbox" data-gallery="galleryProduct" href="/src/img/bgFullHD_min.webp")
+								img(src="/src/img/bgFullHD_min.webp" alt="admx")
+						.glide__slide
+							a(class="glightbox" data-gallery="galleryProduct" href="/src/img/bgFullHD_min.webp")
+								img(src="/src/img/bgFullHD_min.webp" alt="admx")
+						.glide__slide
+							a(class="glightbox" data-gallery="galleryProduct" href="/src/img/bgFullHD_min.webp")
+								img(src="/src/img/bgFullHD_min.webp" alt="admx")
+						.glide__slide
+							a(class="glightbox" data-gallery="galleryProduct" href="/src/img/bgFullHD_min.webp")
+								img(src="/src/img/bgFullHD_min.webp" alt="admx")
+
+				.glide__arrows(data-glide-el="controls")
+					button.glide__arrow.glide__arrow--left(data-glide-dir="<"): i.fas.fa-chevron-left
+					button.glide__arrow.glide__arrow--right(data-glide-dir=">"): i.fas.fa-chevron-right
+				.glide__bullets(data-glide-el="controls[nav]")
+					button.glide__bullet(data-glide-dir="=0")
+					button.glide__bullet(data-glide-dir="=1")
+					button.glide__bullet(data-glide-dir="=2")
+					button.glide__bullet(data-glide-dir="=3")
+					button.glide__bullet(data-glide-dir="=4")
+					button.glide__bullet(data-glide-dir="=5")
+
+
+
+
+footer
+	.container
+		.item.spaceUp
 			h4 Se recomienda eliminar las librerías o funciones que no se utilicen, para mejorar el rendimiento.
 
 		-for (var i = 0; i <= 10; i++)
