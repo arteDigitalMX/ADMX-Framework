@@ -232,35 +232,37 @@ section
 		.item
 			h3.azul Acordeón
 			p Éste es un simple script que permite mostrar contenido con efecto de acordeón.
+					
 		.item.tablet-50
-			pre 
-				| .nst-component
-				<br>
-				| &nbsp;&nbsp;&nbsp; button(class="nst-toggle") Botón
-				<br>
-				| &nbsp;&nbsp;&nbsp; .nst-content(style="background-color:#fff; padding:16px;")
-				<br>
-				| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; h4 Contenido visible por default
-		.item.tablet-50
-			.nst-component
-				button(class="nst-toggle") Botón
-				.nst-content(style="background-color:#fff; padding:16px;")
-					h4 Contenido visible por default
+			.atabs
+				.atab
+					input(type="checkbox")#chck1
+					label(for="chck1").atab-label Item 1
+					.atab-content
+						| Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio magni rerum voluptates ratione corrupti sed quos fugiat. Esse, tempora dolores corporis pariatur aut, aliquam natus quibusdam voluptates alias repudiandae sequi.
+				.atab
+					input(type="checkbox")#chck2
+					label(for="chck2").atab-label Item 2
+					.atab-content
+						| Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio magni rerum voluptates ratione corrupti sed quos fugiat. Esse, tempora dolores corporis pariatur aut, aliquam natus quibusdam voluptates alias repudiandae sequi.
 
 		.item.tablet-50
-			pre 
-				| .nst-component.nst-is-collapsed
-				<br>
-				| &nbsp;&nbsp;&nbsp; button(class="nst-toggle") Botón
-				<br>
-				| &nbsp;&nbsp;&nbsp; .nst-content(style="background-color:#fff; padding:16px;")
-				<br>
-				| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; h4 Contenido visible por default
-		.item.tablet-50
-			.nst-component.nst-is-collapsed
-				button(class="nst-toggle") Botón
-				.nst-content(style="background-color:#fff; padding:16px;")
-					h4 Contenido no visible por default
+			.atabs
+				.atab
+					input(type="radio" name="rd")#rd1
+					label(for="rd1").atab-label Item 1
+					.atab-content
+						| Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio magni rerum voluptates ratione corrupti sed quos fugiat. Esse, tempora dolores corporis pariatur aut, aliquam natus quibusdam voluptates alias repudiandae sequi.
+				.atab
+					input(type="radio" name="rd")#rd2
+					label(for="rd2").atab-label Item 2
+					.atab-content
+						| Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio magni rerum voluptates ratione corrupti sed quos fugiat. Esse, tempora dolores corporis pariatur aut, aliquam natus quibusdam voluptates alias repudiandae sequi.
+				.atab
+					input(type="radio" name="rd")#rd3
+					label(for="rd3").atab-close Close others &times;
+
+
 
 
 section#iconFont
